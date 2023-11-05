@@ -31,6 +31,18 @@ header {
         width: 80px;
         height: 24px;
         border: none;
+        cursor: pointer;
+        transition: transform .3s, box-shadow 0.2s;
+        border-radius: 0px 4px 4px 0px;
+        background: rgb(47,128,237);
+        transition: box-shadow 0.2s;
+        color: #fff;
+        &:hover {
+            box-shadow: 2px 0px 4px 0px rgba(47,128,237,0.75);
+        }
+        &:active {
+            transform: translate(0.5px, 0.5px);
+        }
     }
 }
 .settings {
@@ -42,7 +54,7 @@ header {
         height: 24px;
         border: none;
         cursor: pointer;
-        transition: transform .3s, box-shadow 0.2s;
+        transition: box-shadow 0.2s;
         border-radius: 5px;
     }
     button:hover {
