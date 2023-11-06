@@ -5,12 +5,12 @@
                 <img src="../../assets/logo.svg" alt="header-logo">
             </div>
             <div class="search">
-                <input type="text" placeholder="What are you want to find out?">
-                <button>search</button>
+                <input type="text" placeholder="What are you want to find out?" [(ngModel)]="searchQuery">
+                <button (click)="search()">search</button>
             </div>
             <div class="settings">
                 <button class="header__btn">
-                  <img src="../../assets/search_settings.svg" alt="img">
+                  <img src="../../assets/search_settings.svg" alt="search-img">
                 </button>
             </div>
         </div>
