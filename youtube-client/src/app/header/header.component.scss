@@ -1,5 +1,23 @@
 $bg-grey: #E5E5E5;
 
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .2s;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 2px 0px 4px 0px rgba(47,128,237,0.75);
+    }
+    &:active {
+        transform: translate(0.5px, 0.5px);
+    }
+}
+
 header {
     background-color: $bg-grey;
     height: 80px;
@@ -9,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     height: 80px;
     margin: 0 auto;
 }
@@ -32,7 +50,7 @@ header {
         height: 24px;
         border: none;
         cursor: pointer;
-        transition: transform .3s, box-shadow 0.2s;
+        transition: box-shadow 0.2s;
         border-radius: 0px 4px 4px 0px;
         background: rgb(47,128,237);
         transition: box-shadow 0.2s;
@@ -46,27 +64,14 @@ header {
     }
 }
 .settings {
-    button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-        height: 24px;
-        border: none;
-        cursor: pointer;
-        transition: box-shadow 0.2s;
-        border-radius: 5px;
-    }
-    button:hover {
-        box-shadow: 2px 0px 4px 0px rgba(47,128,237,0.75);
-    }
-    button:active {
-        transform: translate(0.5px, 0.5px);
-    }
+
 }
 .login-block {
     position: absolute;
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
+}
+.login-block {
+
 }
